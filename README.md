@@ -57,6 +57,10 @@ the job will always build what is specified by the webhook trigger, that comes f
 
 
 
+refs:
+freestyle job: https://dev.to/oliverjumpertz/setting-up-jenkins-to-handle-github-pull-requests-5bjc
+pipeline job: https://cwiki.apache.org/confluence/display/OPENWHISK/How+to+make+Jenkins+pipeline+jobs+triggered+by+pull+requests+for+Apache+projects
+
 
 
 
