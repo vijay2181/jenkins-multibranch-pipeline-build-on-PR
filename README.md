@@ -9,7 +9,8 @@
 - we can do trigger at PR head(initial pr request) and trigger at merge. -> this option can be enabled
 - pr-head -> i will go with this option only
 - when we add build to jenkins initially, then all active PR’s in the repo will be triggered for the first time, then from next on wards, only new PR which is raised will be triggered. and commits to that PR will also trigger build again.
-- multi-branch pipeline deciding factor is presence of jenkinsfile in each branch 
+- multi-branch pipeline deciding factor is presence of jenkinsfile in each branch
+- each PR is also a branch with respect to multi-branch pipeline
 
 ## create a webhook
 
