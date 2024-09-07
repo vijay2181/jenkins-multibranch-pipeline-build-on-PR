@@ -11,6 +11,10 @@
 - when we add build to jenkins initially, then all active PR’s in the repo will be triggered for the first time, then from next on wards, only new PR which is raised will be triggered. and commits to that PR will also trigger build again.
 - multi-branch pipeline deciding factor is presence of jenkinsfile in each branch
 - each PR is also a branch with respect to multi-branch pipeline
+- build executors means, if we have multiple jobs, then they can be built parallely, if job build multiple times at one job, then only one first build will happen and other will be in queue
+- if we want to build same job two times and it needs to run then we need to enable concurrent build option
+- if build is inprogress, then you built same job, then it will be queue...if you build again, jenkins may drop the 3rd build of same job
+- Jenkins might have limitations on the number of builds it can queue, depending on the configuration. If the queue is full or the build system is overwhelmed, additional builds may not be scheduled.
 
 ## create a webhook
 
