@@ -15,6 +15,8 @@
 - if we want to build same job two times and it needs to run then we need to enable concurrent build option
 - if build is inprogress, then you built same job, then it will be queue...if you build again, jenkins may drop the 3rd build of same job
 - Jenkins might have limitations on the number of builds it can queue, depending on the configuration. If the queue is full or the build system is overwhelmed, additional builds may not be scheduled.
+- the disableConcurrentBuilds() option ensures that concurrent builds of the same branch are not allowed. This means that if a build is running for a particular branch (or PR) and another build is triggered for the same branch, the second build will wait for the first to complete before starting.
+- However, builds for different branches (or PRs) can still run in parallel. For example, if you have two PRs, PR-1 and PR-2, builds for PR-1 and PR-2 can run simultaneously. But if PR-1 is already being built and another build for PR-1 is triggered, the second build will be queued until the first build finishes.
 
 ## create a webhook
 
