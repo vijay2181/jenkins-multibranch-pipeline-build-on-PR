@@ -22,7 +22,7 @@
 
 ## create a webhook
 
-<img width="1511" alt="Screenshot 2024-09-03 at 3 49 04 PM" src="https://github.com/user-attachments/assets/5ec8355c-fc77-4f3f-b9d9-6d07fa0be1de">
+<img width="1042" alt="Screenshot 2024-10-20 at 7 55 16 PM" src="https://github.com/user-attachments/assets/3b17303b-7fbe-4f62-9540-2c695c9ed27e">
 
 - select individual events, we will only use hook for PRs
 
